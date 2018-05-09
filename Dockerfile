@@ -5,3 +5,10 @@
 FROM nginx
 
 COPY nginx.conf /etc/nginx/nginx.conf
+
+
+# Trick your computer into thinking it owns a specific domain and test things
+# To test you can edit /etc/hosts on your local machine, like this: (sudo required)
+#127.0.0.1    example.com
+#127.0.0.1    subdomain.example.com
+#
