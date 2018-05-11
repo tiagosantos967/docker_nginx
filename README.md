@@ -5,13 +5,13 @@ You can find the file structure of `nginx.conf` here. Don't forget to change it.
 
 ## Build the container
 ```
-docker build -t tiago_nginx .
+docker build -t docker_nginx .
 ```     
 
 ## Run the container
 Considering that you cloned the project on your home folder
 ```
-docker run --name tiago_nginx --net=host -v ~/tiago_nginx/nginx.conf:/etc/nginx/nginx.conf:ro tiago_nginx
+docker run --name docker_nginx --net=host -v ~/docker_nginx/nginx.conf:/etc/nginx/nginx.conf:ro docker_nginx
 ```
 
 ## (For Testing) Changing /etc/hosts
